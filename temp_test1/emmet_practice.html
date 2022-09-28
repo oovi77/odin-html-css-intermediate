@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<div id="page">
+    <p>Hello World</p>
+</div>
+
+
+typing in span.purple will generate a span element with the class 
+purple
+
+<span class="purple"></span>
+
+<!-- can think of emmet as writing out css in your html-->
+<div id="idname"></div>
+<link rel="stylesheet" href="">
+<link rel="stylesheet" href="style.css">
+
+<!--typing div.purple>span.cyan-->
+<div class="purple"><span class="cyan"></span></div>
+
+<!--typing out header>nav>ul-->
+<header>
+    <nav>
+        <ul></ul>
+    </nav>
+</header>
+
+<!--typing out header>nav>ul>li*3-->
+<header>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+</header>
+
+<!--using {} will put text in your elements with what is in
+the curly brackets,
+ex: typing out header>nav>ul>li*3{text1}-->
+
+<header>
+    <nav>
+        <ul>
+            <li>text1</li>
+            <li>text1</li>
+            <li>text1</li>
+        </ul>
+    </nav>
+</header>
+
+<!--what if we wanted to count inside of our li's?, well we would
+    use the dollar sign $ symbol
+ex: header>nav>ul>li*3{List item $}-->
+
+<header>
+    <nav>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </nav>
+</header>
+
+<!--typing out:
+header>nav>ul>li*3.class-${List Item $}-->
+
+<header>
+    <nav>
+        <ul>
+            <li class="class-1">List Item 1</li>
+            <li class="class-2">List Item 2</li>
+            <li class="class-3">List Item 3</li>
+        </ul>
+    </nav>
+</header>
+
+<!--
+    using an additional $$ to add a 0 to the start of the number
+
+    header>nav>ul>li*3.class-${List item $$}
+-->
+<header>
+    <nav>
+        <ul>
+            <li class="class-1">List item 01</li>
+            <li class="class-2">List item 02</li>
+            <li class="class-3">List item 03</li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!--the + is used to represent sibling objects like in css
+    tpying out:
+    header+main+footer-->
+
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+
+<!--can do the following, where the carrot operator (climb up operator?) ^ means
+    we are going up one level,
+    if we didn't have the ^ operator, main and footer would also be children of header, like
+    nav currently is a child of header:
+header>nav^main+footer-->
+
+<header>
+    <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+
+<!-- instead of using the ^ , we can instead use the grouping characters which are brackets()
+typing out:
+(header>nav)+main+footer-->
+<header>
+    <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+
+<!--typing out:
+    (header>h2{Heading}+nav>ol>li*5>a{Link})+main+footer
+-->
+<header>
+    <h2>Heading</h2>
+    <nav>
+        <ol>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+            <li><a href="">Link 5</a></li>
+        </ol>
+    </nav>
+</header>
+<main></main>
+<footer></footer>
+
+<!--typing out:
+    form:post>(.group>lavel+input:text)+(.group>label+input:number)
+-->
+<form action="" method="post">
+    <div class="group"><label for=""></label><input type="text" name="" id=""></div>
+    <div class="group"><label for=""></label><input type="number" name="" id=""></div>
+</form>
+
+<div id="page">
+    <p>Hello world</p>
+</div>
+
+
+<p class="text"></p>
+
+<div>
+    <p></p>
+</div>
+
+<div></div>
+<p></p>
+
+<div>
+    <p>text-1</p>
+</div>
+<div class="class1"></div>
+
+<div class="class-1"></div>
+<div class="class-1"></div>
+<div class="class-1"></div>
